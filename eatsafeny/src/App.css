@@ -65,12 +65,15 @@ background-color:rgb(34, 139, 196);
 
 .topBar {
   color: #8ECAE6;
-  background-color: #023047;
+  background-color: #01567a;
+  justify-content: space-between;
+  margin: none;
 }
 
 .logo {
   color: #8ECAE6;
-  background-color: #023047;
+  background-color: #01567a;
+  margin: none;
 }
 
 .home {
@@ -80,6 +83,15 @@ background-color:rgb(34, 139, 196);
 
 .sideBar {
   color: #8ECAE6;
+  background-color: #023047;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+  margin: auto;
   background-color: #023047;
 }
 
