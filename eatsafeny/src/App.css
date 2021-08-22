@@ -93,6 +93,11 @@ a {
   background-color: #023047;
 }
 
+h1{
+  margin: 0;
+  padding: 0;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
