@@ -1,7 +1,13 @@
+html{
+  background-color: #023047;
+  height: 100vh;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 .carousel {
   width: 600px;
   height: 600px;
@@ -70,7 +76,7 @@ a {
 
 .home {
   color: #8ecae6;
-  background-color: #023047;
+  background-color: #01567a;
 }
 
 .sideBar {
@@ -85,12 +91,14 @@ a {
   width: 55%;
   margin: auto;
   background-color: #023047;
+  padding-bottom: 20px;
 }
 
 h1{
   margin: 0;
   padding: 0;
 }
+
 
 @keyframes App-logo-spin {
   from {
