@@ -4,18 +4,18 @@ import Reviews from '../components/Reviews'
 import ReviewForm from "../components/ReviewForm"
 // import InspectionReview from './components/InspectionReview'
 
-function DetailedView() {
+function DetailedView(props) {
     return (
         <div>
             <p>Restaurant view</p>
-            <SideSearchBar/>
+            <SideSearchBar {...props}/>
             <h1>Restaurant name</h1>
-            <img src="lettergrade"/>
+            <img src="lettergrade" alt="inspection letter grade"/>
             <div>
             <p>Address:</p>
             <p>Phone Number:</p>
             </div>
-            <Reviews/>  //carsousel
+            <Reviews/> {`carousel`}
             <ReviewForm/>
             {/* <InspectionReview/>     */}
         </div>

@@ -1,11 +1,11 @@
-import React, { useState, useEffect} from 'react';
-import {useHistory, withRouter} from 'react-router-dom';
-import axios from 'axios';
+import React, { useState} from 'react';
+// import {useHistory, withRouter} from 'react-router-dom';
+// import axios from 'axios';
 // import {apiURL} from '../util/apiURL.js';
 // const API = apiURL();
 
 function ReviewForm () {
-let history = useHistory();
+// let history = useHistory();
 
 // const addReview = (newReview) => {
 //     axios.post(`${API}/reviews`, newReview).then(() => {
@@ -25,9 +25,9 @@ const handleTextChange = (event) => {
     setReview({...review, [event.target.id] : event.target.value})
 }
 
-const handleCheckBox = () => {
-    setReview({...review, is_covidfriendly: !review.is_covidfriendly})
-}
+// const handleCheckBox = () => {
+//     setReview({...review, is_covidfriendly: !review.is_covidfriendly})
+// }
 
 const handleSubmit = (event) => {
     event.preventDefault();
