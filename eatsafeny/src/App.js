@@ -51,11 +51,6 @@ function App() {
       setError(true);
     }
 
-    setSearchQueries({
-      name: "",
-      borough: "",
-      letterGrade: "",
-    });
   };
 
   return (
