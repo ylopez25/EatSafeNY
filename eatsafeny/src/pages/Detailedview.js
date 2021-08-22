@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import SideSearchBar from '../components/SideSearchBar'
+import TopSearchBar from '../components/TopSearchBar'
 import Reviews from '../components/Reviews'
 import ReviewForm from "../components/ReviewForm"
 import { useParams } from 'react-router-dom'
@@ -42,8 +42,7 @@ function DetailedView(props) {
 
     return (
         <div>
-            <p>Restaurant view</p>
-            <SideSearchBar {...props}/>
+            <TopSearchBar {...props}/>
             <h1>{restaurant.dba}</h1>
             <img width="200px" height="200px" src={LetterGrade()} alt="inspection letter grade"/>
             <br />
