@@ -17,29 +17,16 @@ flex-direction: column;
 justify-content: center;
 
 }
-.slide1 p {
+.text {
   opacity: 0%;
 }
-.slide1 p:hover {
-  opacity: 80%;
-  /* display: flex;
-  justify-items: center;
-  margin:auto; */
+.text:hover {
+  opacity: 100%;
+background-color:rgb(34, 139, 196);
 }
 
-/* .carousel p:hover  {
-  /* opacity: 100%;
-  display: flex;
-  justify-items: center;
-  margin:auto;
-/* align-items: center; */
-
-/* .carousel img {
-opacity: 0%;
-} */
-
 .carousel img:hover {
-  filter: blur(8px);
+  filter: blur(5px);
   -webkit-filter: blur(8px);
 }
 
