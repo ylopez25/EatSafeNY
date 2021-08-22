@@ -8,6 +8,20 @@ function TopSearchBar(props) {
         props.onChange({...props.value, [e.target.id]: e.target.value})
     }
 
+    const SubmitButton = () => {
+        if (props.value.borough){
+            return (        
+                <Link to="/results">
+                    <Button size="sm" variant="warning" as="input" type="submit" value="Is it safe?" onClick={props.searchRestaurant} />
+                </Link>  
+            )
+        } else {
+            return(
+                <Button size="sm" variant="warning" as="input" type="submit" value="Is it safe?" />
+            )
+        }
+    }
+
     return (
         <div className="topBar">
             <form> 
@@ -20,12 +34,12 @@ function TopSearchBar(props) {
                 />
 
                 <select 
+                    required
                     id="borough"
                     value={props.value.borough} 
                     onChange={handleSearchInput}
-                    required
                 > 
-                        <option value="" disabled selected>Borough</option>
+                        <option value="" label="Borough" disabled></option>
                         <option value="Bronx">Bronx</option> 
                         <option value="Brooklyn">Brooklyn</option>
                         <option value="Manhattan">Manhattan</option>
@@ -38,14 +52,12 @@ function TopSearchBar(props) {
                     value={props.value.letterGrade} 
                     onChange={handleSearchInput}
                 > 
-                    <option value="" disabled selected hidden>Letter Grade</option>
+                    <option value="" disabled >Letter Grade</option>
                     <option value="A">A</option> 
                     <option value="B">B</option>
                     <option value="C">C</option>
                 </select>
-                <Link to="/results">
-                    <Button size="sm" variant="warning" as="input" type="submit" value="Is it safe?" onClick={props.searchRestaurant}/>
-                </Link>
+                <SubmitButton />
             </form>
         </div>
     )
