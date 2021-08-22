@@ -64,8 +64,19 @@ a {
 .topBar {
   color: #8ecae6;
   background-color: #01567a;
+  width: 100%;
+}
+
+.search-form{
+  width: 50%;
+  display: flex;
   justify-content: space-between;
-  margin: none;
+  margin: auto;
+  align-items: center;
+}
+
+#required{
+  color: orange;
 }
 
 .logo {
@@ -96,8 +107,14 @@ a {
 h1{
   margin: 0;
   padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: rgb(249, 188, 75);
 }
 
+#name{
+height: 30px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
