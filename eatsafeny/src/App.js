@@ -1,4 +1,4 @@
-import { Route, Switch, useHistory } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import React, { useState } from 'react'
 import Home from './pages/Home'
 import Results from './pages/Results'
@@ -50,6 +50,11 @@ function App() {
       setError(true)
     }
 
+    setSearchQueries({
+      name: "",
+      borough: "",
+      letterGrade: ""  
+    })
   }
 
 
@@ -61,7 +66,7 @@ function App() {
           <Home value={searchQueries} onChange={handleUserInput}/>
         </Route>
         <Route path="/results/:id"> 
-          <DetailedView />
+          <DetailedView value={searchQueries} onChange={handleUserInput} searchRestaurant={searchRestaurant}/>
         </Route>
         <Route path="/results"> 
           <Results value={searchQueries} onChange={handleUserInput} searchRestaurant={searchRestaurant} restaurants={restaurants} error={error}/>
