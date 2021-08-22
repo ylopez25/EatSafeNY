@@ -51,12 +51,14 @@ function DetailedView(props) {
             <p>Phone Number: {restaurant.phone}</p>
             <p>✅ Covid-safe</p>
             </div>
-            <h2>See it to believe it.</h2>
-            <h3>"From New Yorkers like you!"</h3>
+            <h2 className="slogans">See it to believe it.</h2>
+            <h3 className="slogans">"From New Yorkers like you!"</h3>
             <Reviews/>
-            <h4>Stay Negative!</h4>
+            <h4 className="slogans">Stay Negative!</h4>
+            <div id="review-section">
             <h4> Leave a Review.</h4>
             <ReviewForm/>
+            </div>
         </div>
     )
 }
