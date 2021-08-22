@@ -33,6 +33,7 @@ function TopSearchBar(props) {
                     onChange={handleSearchInput}
                 />
 
+                <label htmlFor="borough" value="required"><h4>*</h4></label>
                 <select 
                     required
                     id="borough"

@@ -1,8 +1,11 @@
+import { Link } from 'react-router-dom'
 
 function Logo() {
     return (
         <div className="logo">
-            <h1>EatSafe NY</h1>
+            <Link to="/"> 
+                <h1>EatSafe NY</h1>
+            </Link>
         </div>
     )
 }

@@ -33,6 +33,7 @@ function SideSearchBar(props) {
                     onChange={handleSearchInput}
                 />
 
+                <label htmlFor="borough" value="required"><h4>*</h4></label>
                 <select 
                     id="borough"
                     value={props.value.borough} 
