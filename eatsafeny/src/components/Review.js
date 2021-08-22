@@ -11,8 +11,8 @@ function Review({review}) {
           src={review.img}
           alt="review Review"
         />
-        <Carousel.Caption>
-          <h3>Date: {review.date}</h3>
+        <Carousel.Caption className="text">
+          <h4>Date: {review.date}</h4>
           <h4>Rating: {review.rating}</h4>
           <h4>
             Review: {review.review}

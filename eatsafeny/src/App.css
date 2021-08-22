@@ -2,6 +2,33 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.carousel {
+  width: 600px;
+  height: 600px;
+  display: flex;
+ align-items: center;
+ justify-content: center;
+margin: auto;
+}
+
+.slide1 {
+  display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+.text {
+  opacity: 0%;
+}
+.text:hover {
+  opacity: 100%;
+background-color:rgb(34, 139, 196);
+}
+
+.carousel img:hover {
+  filter: blur(5px);
+  -webkit-filter: blur(8px);
+}
 
 .App {
   text-align: center;

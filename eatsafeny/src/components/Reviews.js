@@ -28,11 +28,11 @@ function Reviews() {
     },
   ];
   return (
-    <div>
+    <div className="carousel">
       <Carousel>
         {reviews.map((review) => {
           return (
-            <Carousel.Item key={uuidv4()}>
+            <Carousel.Item key={uuidv4()} className="slide1">
               <Review review={review} />
             </Carousel.Item>
           );
