@@ -2,6 +2,46 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.carousel {
+  width: 600px;
+  height: 600px;
+  display: flex;
+ align-items: center;
+ justify-content: center;
+margin: auto;
+}
+
+.slide1 {
+  display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+.slide1 p {
+  opacity: 0%;
+}
+.slide1 p:hover {
+  opacity: 80%;
+  /* display: flex;
+  justify-items: center;
+  margin:auto; */
+}
+
+/* .carousel p:hover  {
+  /* opacity: 100%;
+  display: flex;
+  justify-items: center;
+  margin:auto;
+/* align-items: center; */
+
+/* .carousel img {
+opacity: 0%;
+} */
+
+.carousel img:hover {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
 
 .App {
   text-align: center;
