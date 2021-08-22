@@ -1,4 +1,5 @@
 import React, { useState} from 'react';
+import Button from 'react-bootstrap/Button'
 // import {useHistory, withRouter} from 'react-router-dom';
 // import axios from 'axios';
 // import {apiURL} from '../util/apiURL.js';
@@ -34,16 +35,16 @@ const handleSubmit = (event) => {
     // addReview(review)
 }
 return (
-    <div>
+    <div className="form">
         <form onSubmit={handleSubmit}>
             <label htmlFor="date">Date:</label>
-            <input type="text"
+            <input type="date"
             id="date"
             // value={review.date}
             onChange={handleTextChange}
             required
             />
-    
+ 
             <label htmlFor="img">Image:</label>
             <input type="text" 
             id="img"
@@ -52,22 +53,29 @@ return (
             placeholder="http://"
             onChange={handleTextChange}
             />
+          
+
             <label htmlFor="review">Review:</label>
             <input type="text"
             id="review"
             value={review.review}
             onChange={handleTextChange}
              />
+            
              <label htmlFor="rating">Covid Safety</label>
              <input type="number" 
              id="rating"
              value={review.rating}
-             placeholder="1"
+            //  placeholder="1"
              min="1" 
              max="5"
-            //  onChange={}
+             onChange={handleTextChange}
              />
-             <input type="submit" />
+            <br />
+          <br />
+             <Button size="sm" variant="warning" as="input" type="submit" value="Is it safe?" />
+          <br />
+          <br />
         </form>
 
     </div>
