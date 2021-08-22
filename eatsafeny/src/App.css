@@ -65,6 +65,7 @@ a {
   color: #8ecae6;
   background-color: #01567a;
   width: 100%;
+  padding-bottom:10px ;
 }
 
 .search-form{
@@ -122,4 +123,9 @@ height: 30px;
   to {
     transform: rotate(360deg);
   }
+}
+
+#search-h2{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
