@@ -78,7 +78,7 @@ background-color:rgb(34, 139, 196);
 
 .home {
   color: #8ECAE6;
-  background-color: #023047;
+  background-color: #01567a;
 }
 
 .sideBar {
@@ -93,6 +93,11 @@ background-color:rgb(34, 139, 196);
   width: 55%;
   margin: auto;
   background-color: #023047;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
 }
 
 @keyframes App-logo-spin {
