@@ -88,7 +88,7 @@ a {
 
 .home {
   color: #8ecae6;
-  background-color: #023047;
+  background-color: #01567a;
 }
 
 .sideBar {
@@ -103,6 +103,7 @@ a {
   width: 55%;
   margin: auto;
   background-color: #023047;
+  padding-bottom: 20px;
 }
 
 h1{
@@ -113,9 +114,11 @@ h1{
   color: rgb(249, 188, 75);
 }
 
+
 #name{
 height: 30px;
 }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
