@@ -7,11 +7,11 @@ function Review({review}) {
         <img
           width="200px"
           height="400px"
-          className="d-block w-100"
+          className="d-block w-100 review-img"
           src={review.img}
           alt="review Review"
         />
-        <Carousel.Caption className="text">
+        <Carousel.Caption>
           <h4>Date: {review.date}</h4>
           <h4>Rating: {review.rating}</h4>
           <h4>
